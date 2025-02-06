@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', 'Roboto Mono', sans-serif;
+    background-color: #060202;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    flex: 1;
+    background-color: #1D1717;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 500;
+    height: 4rem;
+    background-color: #1D1717;
+}
+
+.fa-github{
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: scale(1.3);
+}
+
+.side-section{
+    background: url(assets/img1.jpg) no-repeat center center/cover;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cancel{
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.cancel:hover {
+    background-color: #ffffff;
+    color: #1a1626;
+}
+
+.form-section{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.form-section p{
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+a{
+    color: #681515;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+form{
+    width: 50%;
+}
+
+.input-name{
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 25px 15px;
+    background-color: #462929;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.password input{
+    flex: 1;
+}
+
+.showPassword{
+    position: absolute;
+    right: 20px;
+    top: 36%;
+    transform: translateY(-50%);
+    background: none;
+    color: #aaa;
+    border: none;
+    cursor: pointer;    
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+}
+
+.checkbox input{
+    margin-right: 10px;
+}
+
+.submit-bttn{
+    width: 100%;
+    padding: 25px 15px;
+    margin-bottom: 50px;
+    background-color: #681515;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.submit-bttn:hover{
+    background-color: #462929;
+}
+
+.divider{
+    text-align: center;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.socials{
+    display: flex;
+    gap: 10px;
+    width: 50%;
+}
+
+.google-bttn,
+.apple-bttn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 15px 15px;
+    background-color: #681515;
+    border: 1px solid #302626;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fa-apple {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.fa-google {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.google-bttn:hover,
+.apple-bttn:hover {
+  background-color: #462929;
+}
+
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .side-section {
+      display: none; /* Hide the image on smaller screens */
+    }
+  
+    .form-section {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+    }
+  
+    .submit-bttn {
+      padding: 10px;
+    }
+  
+    .socials {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .cancel {
+      font-size: 0.8rem;
+      padding: 3px 8px;
+    }
+  
+    .google-bttn,
+    .apple-bttn {
+      font-size: 0.9rem;
+    }
+}
