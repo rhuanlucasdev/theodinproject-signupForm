@@ -28,7 +28,7 @@ To view and interact with the project, simply clone the repository and open the 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/create-account-page.git
+   git clone https://github.com/rhuanlucasdev/theodinproject-signupForm.git
    ```
 2. Open the ```index.html``` file in your browser.
 
