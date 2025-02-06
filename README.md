@@ -42,7 +42,7 @@ To view and interact with the project, simply clone the repository and open the 
   
 **Password Visibility Toggle**
 
-*Click the eye icon next to the password field to toggle visibility between plain text and password.
+* Click the eye icon next to the password field to toggle visibility between plain text and password.
 
 **Example Form**
 ```html
